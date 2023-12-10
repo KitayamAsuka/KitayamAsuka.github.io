@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>实验 on 北山工坊</title>
+        <link>https://kitasuna.ml/tags/%E5%AE%9E%E9%AA%8C/</link>
+        <description>Recent content in 实验 on 北山工坊</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 02 Jan 2023 20:54:15 +0800</lastBuildDate><atom:link href="https://kitasuna.ml/tags/%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CS142中的CSS技巧</title>
+        <link>https://kitasuna.ml/post/cs142%E4%B8%AD%E7%9A%84css%E6%8A%80%E5%B7%A7/</link>
+        <pubDate>Mon, 02 Jan 2023 20:54:15 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/cs142%E4%B8%AD%E7%9A%84css%E6%8A%80%E5%B7%A7/</guid>
+        <description>&lt;p&gt;CSS Flexible Box Layout
+Flex作为目前最推荐的排版方式，可谓是不得不掌握。而我的记忆还停留在用表格和float排版的年代，为什么我掌握的是这么古早的知识啊！&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex&lt;/code&gt; flex-grow、flex-shrink、flex-basis的简写，这玩意按照双值三值取才能用得到后面的，麻烦得要死就不管了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-basis&lt;/code&gt; 这个比width又更高的优先级，指示flex元素在主轴方向上的初始大小&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-direction&lt;/code&gt; 指定内部元素在flex容器中的布局，定义主轴方向（正或者反）有&lt;code&gt;row row-reverse column column-reverse&lt;/code&gt;基本上就是字面意思&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-flow&lt;/code&gt; 是flex-direction和flex-wrap的简写，取值分别为row和nowrap&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-grow&lt;/code&gt; flex增长系数，分配剩余空间的比例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-shrink&lt;/code&gt; flex收缩规则，可以理解为grow的反义词，数字越高占地越小&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-wrap&lt;/code&gt; 指定单行还是多行显示。nowrap表示摆放到一行，可能会溢出。wrap为多行，wrap-reverse多行且首尾互换&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;order&lt;/code&gt; 布局顺序，按照order的值递增布局&lt;/p&gt;
+&lt;p&gt;Flex Item为弹性容器的以及子元素&lt;/p&gt;
+&lt;p&gt;交叉轴指和设置的轴垂直方向的轴&lt;/p&gt;
+&lt;p&gt;预定义的flex值
+initial：0 1 auto
+auto：1 1 auto
+none：0 0 auto&lt;/p&gt;
+&lt;p&gt;align-items使元素在交叉轴对齐，默认为stretch，拉伸来填满。flex-start顶部对齐，flex-end下部对齐，center居中对齐&lt;/p&gt;
+&lt;p&gt;justify-content使元素在主轴上对齐，也是有stretch，flex-start，flex-end，center和space-around每个元素左右空间相等，space-between元素排列好后剩余空间平均分配到元素之间（不会在靠边的地方留空间）&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;对齐的实际用例&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Q:margin-left: auto 为什么可以使元素靠右?
+A:将 margin-left 设为 auto 后, &lt;strong&gt;元素左边的 margin 会被尽可能的撑大&lt;/strong&gt;, 所以自然就把元素挤到右边去了&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>北山家的饭 SP1</title>
+        <link>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-sp1/</link>
+        <pubDate>Sun, 01 Jan 2023 23:45:13 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-sp1/</guid>
+        <description>&lt;p&gt;这回不是正经饭，煮泡面&lt;/p&gt;
+&lt;p&gt;说起泡面有件挺意难平的事。好几年前上高中的时候，有一次学校拉着学生去全运会当志愿者，说是志愿者其实就是配合表演节目，每个人那个小板子，到时间了就举起来放下什么的。虽然任务不是很困难，但是人多了协调起来也很麻烦。负责这个表演的是个很麻烦的娘炮导演，据说负责过北京奥运会的某个多人节目。我们作为高中生，而且是暑假被占用的高中生自然是兴致不高的，勉勉强强配合一下抓紧时间看书了。毕竟作为升学率第一的高中大伙都明白什么学校荣誉有屁用，只有考个好大学才是自己的。那个娘炮导演看到一大堆人都在上面不怎么积极，光看书做题就整天对我们撒火，说各种难听的话。我们呢也气不过，还有人直接骂回去的，毕竟在我们看来只有“你捷豹谁啊”。&lt;/p&gt;
+&lt;p&gt;每天过的不是很愉快，不过政府给每个参与的学生都给了很丰厚的一笔补贴，我们高中钱肯定是自己毛了的，为了不表现得特别缺德，特许我们免费吃住和免费的往返大巴，不得不说那会的伙食那是真的好。不仅每顿肉和菜都很丰盛，水果也是足量供应。突出一副不怕你吃的架势。实际上可能确实也吃不了多少，再怎么吃也吃不到每人每天两百的补助水平啊，学校大锅饭再怎么也不是外面吃饭的那个消费。&lt;/p&gt;
+&lt;p&gt;总而言之吧，度过了很幸福的一段时间（指吃喝上面）。后来有一次彩排到很晚，可能晚上十点多十一点才返回学校，那会真把人都累麻了，又累又饿。那个娘炮导演除了说你们做的真棒，非常好以外根本不把学生当人看，使劲用。回去之后学校食堂给我们准备了夜宵，每个窗口都排满了人，一直做面条的窗口改成了桶装泡面。老实说我当时有点嫌弃的，毕竟其他窗口看起来都很好吃，不过这个最快，当时又快饿昏迷了，只想着能赶紧吃上一口。没想到啊，吃上之后那是惊为天人。味道超乎了我的想象。滚烫的面汤把泡面烫的热乎乎的，面条又劲道又有滋味，搭配上蒸腾的热气让人吃完了就满头大汗。吃完了面条整个面汤还是很烫。可以说是我这辈子吃过最好吃的一次泡面了。虽然就是简简单单的桶装红烧牛肉面，但后面再也没有吃到过类似的口味了。特别是家父做饭突出一个凑合，就算煮泡面也是软妥妥的难吃的很。吃的时候就让人很反胃。&lt;/p&gt;
+&lt;p&gt;不过呢，今天逛知乎的时候看到金城武的一个电影片段，里面说了一个泡面的泡法，我尝试之后根据结果改进了一下，现在写到下面。味道上好像没有当年那个感觉了，毕竟带了记忆滤镜嘛，说不定只是当时太累太饿而那碗面刚好又烫又劲道罢了。&lt;/p&gt;
+&lt;p&gt;首先是需要准备一壶滚烫的开水，越烫越好，我怀疑如果是高汤味道会更好，而且更利于保温&lt;/p&gt;
+&lt;p&gt;其次把面饼和蔬菜包放到碗里，水没过面饼，盖上等3分钟&lt;/p&gt;
+&lt;p&gt;然后把水倒掉，加入酱包和料包。搅拌45s&lt;/p&gt;
+&lt;p&gt;倒入碗8成的水，这里我理解的是不要淹没面条，闷90s&lt;/p&gt;
+&lt;p&gt;然后就可以吃啦&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;电影里的做法是把蔬菜包和料包一起放的，我试了会煮不开蔬菜包，应该要提前放，而且这个东西没有说过熟的，应该是随便放放。面条的话按照电影后面应该是搅拌30s和闷1分钟。30s的话我没法拌均匀，除非很用力吧。闷1分钟最后面条有的地方比较硬。有可能因为我这个地方海拔1000米，属于是一个小高原，水温不是很够所以才弄不开吧。总之我这里需要加长一点时间&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>高效输入——VIM</title>
+        <link>https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/</link>
+        <pubDate>Sun, 01 Jan 2023 18:53:30 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E9%AB%98%E6%95%88%E8%BE%93%E5%85%A5vim/</guid>
+        <description>&lt;p&gt;不得不说图形化在降低了计算机使用门槛的同时也降低了效率，如果一个系统可以只是用键盘作为输入工具，那么一定会省略下大量的将手移动到鼠标上，再转换到键盘上的时间。
+而这正是早期DOS系统以及目前大多数Linux及Unix发行版Terminal的使用方法。可以说这就是原汁原味的计算机使用。
+说到这里就不得不提一下这个极为高效的文字编辑软件Vim。&lt;/p&gt;
+&lt;p&gt;简要使用说明&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;移动光标 h向左 j向下 k向上 l向右
+当然你也可以使用方向键，更直观但是距离常用键位更远&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最主要的模式 需要注意在Vim中存在有几种模式，不同模式下对文字的编辑会有所不同，这一方面保护了编辑者不容易因为误触删除自己的成果，另一方面也提升了效率。第一种是普通模式，是你刚进入Vim时和按完ESC进入的模式。第二种是插入模式，一般出现在i,a或者r之后，这时Vim的状态很想平时使用的大多数编辑器比方说Word。第三种是视觉模式，在按下V后，此时移动光标会选中扫过的内容，有些类似用鼠标选中某一区域&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;退出Vim :q!会不保存退出，:wq会保存退出。需要注意Vim是大小写敏感的，开启大写后会进入不同的命令里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正常模式下删除光标所在位置字符 x&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;添加文本 i在光标前添加文本，A在一行后添加文本。需要注意这样会进入insert模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除命令 dw删除一个单词 d$删除至行尾 dd删除整行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重复动作 在某个动作前加数字，比方说100j即为向下100行。常见格式为&lt;code&gt;operator [number] motion&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;移动光标到行首 0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;撤销操作 u，撤销一行中的改动U。撤销撤销命令ctrl-R（注意一定是大写）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新置入已删除的文本 p&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;替换 r，ce可以替换当前光标到单词末尾的内容，c$可以替换到行末&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用命令1 ctrl-G显示目前所在位置和文件状态信息。G可以跳转至文件最后一行，如果是一个行号再G那就是那行行尾。gg跳转至首行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查找 &lt;code&gt;/&amp;lt;word&amp;gt;&lt;/code&gt; &lt;code&gt;?&amp;lt;word&amp;gt;&lt;/code&gt; 第一种是正向查找，第二种是反向查找，起点都是光标处。完成后n重复命令，N重复反方向命令。ctrl-O返回较旧的位置，ctrl-I去往较新的位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配符号 在符号上按%可以匹配到对应的另一半上，主要指的就是()[]{}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;替换字符串&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一行内头一个&lt;code&gt;:s/old/new&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一行内所有&lt;code&gt;:s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;两行内所有&lt;code&gt;:#,#s/old/new/g&lt;/code&gt; #,#是首尾两行的行号&lt;/li&gt;
+&lt;li&gt;文件内所有&lt;code&gt;:%s/old/new/g&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全文替换且询问&lt;code&gt;:%s/old/new/gc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用外部命令 在命令前加&lt;code&gt;!&lt;/code&gt;即可。&lt;code&gt;:w &amp;lt;filename&amp;gt;&lt;/code&gt;可以把当前编辑的文件保存在你命名的文件夹中。&lt;code&gt;v motion :w &amp;lt;filename&amp;gt;&lt;/code&gt;这个是用视觉模式选中的保存方法。&lt;code&gt;:r &amp;lt;filename&amp;gt;&lt;/code&gt;提取某个文件并将其插入到文件光标位置后面。&lt;code&gt;:r !dir&lt;/code&gt;可以读取dir命令并输出到文件光标后面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用命令2 o可以在光标下方打开新一行并进入插入模式，O可以在上方打开新的一行。a在光标后，A在行末。e光标移至行末。y复制，p粘贴。&lt;code&gt;:set xxx&lt;/code&gt;可选项有ic忽略字母大小写、is显示部分匹配、hls高亮匹配。也可以关闭，前面加no就行了，no喵&lt;code&gt;:set noic&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ctrl-W可在窗口间跳转&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vimrc可设置偏好，比方说语法高亮&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ctrl-D可以查看可能的补全结果，&lt;!-- raw HTML omitted --&gt;可以自动补全&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>你应该学会——世界上最好的分布式版本控制工具Git</title>
+        <link>https://kitasuna.ml/post/%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%AD%A6%E4%BC%9A%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7git/</link>
+        <pubDate>Sun, 01 Jan 2023 15:14:07 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%AD%A6%E4%BC%9A%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7git/</guid>
+        <description>&lt;p&gt;Commit规范&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;用空行将正文与主体分开
+基本上就是总分的意思，有很多内容要提交的时候先主要的说一下这是在干嘛，然后空一行下面解释为什么要改动和改动的地方&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;限制到50个字符以内
+并不是强制要求，主要还是督促上传者精炼语句，提取关键信息，不过最多72个字符，因为在这之上commit会开始加&amp;hellip;省略后面的内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每句话首字母大写
+好看&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不要用句号给句子收尾
+commit作为一个空间很紧张的地方不要用这种方式浪费&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用强硬句式
+Git中的反馈信息都是使用这种命令句式的，比起普通的叙述句式更让人能一看看出修改的内容。用&lt;code&gt;Refactor subsystem X for readability&lt;/code&gt;取代&lt;code&gt;Fixed bug with Y&lt;/code&gt;，更不要在commit里面写意义不明的&lt;code&gt;More fixes for broken stuff&lt;/code&gt;，这种跟没写是一样的，根本起不到参考作用。
+如果不习惯的话就想想加上If applied,this commit will &lt;em&gt;do sth&lt;/em&gt;.后面的部分就是你应该写的commit。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主体部分使用少于72字符
+主要是会超出右边界&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用主体部分来解释什么和为什么，而不解释怎么样
+解释怎么样就太长太长了，这个应该是你写到技术博客里的东西，在commit里可读性太差了。一般来说代码自身的改变就解释了怎么变化的，如果特别复杂那也是应该在源码注释里面说明&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;命令行的Git比IDE里的Git更强大，多用命令行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Pro Git电子书笔记
+只挑干的记&lt;/p&gt;
+&lt;p&gt;初始化仓库 &lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;克隆仓库 &lt;code&gt;git clone &amp;lt;url&amp;gt; (option file name)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;检查文件状态 &lt;code&gt;git status&lt;/code&gt;    加-s可以获得short版本的输出，??表示新文件，A代表暂存区文件，M代表修改过的文件，如果是MM是暂存后又修改了&lt;/p&gt;
+&lt;p&gt;跟踪文件 &lt;code&gt;git add &amp;lt;files&amp;gt;&lt;/code&gt;    这里需要注意每做一次更改都需要add一次，不然commit上去的就是你最后一次add的，而不是你的最新文件&lt;/p&gt;
+&lt;p&gt;忽略文件 &lt;code&gt;.gitignore&lt;/code&gt; 不需要更新的文件，比方说日志和编译文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;所有空行或者以 &lt;code&gt;#&lt;/code&gt; 开头的行都会被 Git 忽略。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以使用标准的 glob 模式匹配，它会递归地应用在整个工作区中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配模式可以以（&lt;code&gt;/&lt;/code&gt;）开头防止递归。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;匹配模式可以以（&lt;code&gt;/&lt;/code&gt;）结尾指定目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;要忽略指定模式以外的文件或目录，可以在模式前加上叹号（&lt;code&gt;!&lt;/code&gt;）取反。
+glob模式是一种简化的正则表达式
+所谓的 glob 模式是指 shell 所使用的简化了的正则表达式。 星号（&lt;code&gt;*&lt;/code&gt;）匹配零个或多个任意字符；&lt;code&gt;[abc]&lt;/code&gt; 匹配任何一个列在方括号中的字符 （这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）； 问号（&lt;code&gt;?&lt;/code&gt;）只匹配一个任意字符；如果在方括号中使用短划线分隔两个字符， 表示所有在这两个字符范围内的都可以匹配（比如 &lt;code&gt;[0-9]&lt;/code&gt; 表示匹配所有 0 到 9 的数字）。 使用两个星号（&lt;code&gt;**&lt;/code&gt;）表示匹配任意中间目录，比如 &lt;code&gt;a/**/z&lt;/code&gt; 可以匹配 &lt;code&gt;a/z&lt;/code&gt; 、 &lt;code&gt;a/b/z&lt;/code&gt; 或 &lt;code&gt;a/b/c/z&lt;/code&gt; 等&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看已暂存和未暂存的修改 &lt;code&gt;git diff&lt;/code&gt;   和status差不多，但是这个能看到文件内部的更改。&lt;code&gt;git diff --staged&lt;/code&gt;可以查看已暂存文件和最后一次提交文件的差异。其本身只显示尚未add的改动&lt;/p&gt;
+&lt;p&gt;提交更新&lt;code&gt;git commit&lt;/code&gt;  使用-m后缀增加注释内容，跳过暂存可以使用-a后缀，可以直接提交所有跟踪的文件&lt;/p&gt;
+&lt;p&gt;移除文件 &lt;code&gt;git rm&lt;/code&gt;  从暂存区移除某个文件，移除后就不会再跟踪这个文件了，需要注意如果之前已经修改该或暂存过需要使用-f后缀强制删除。如果只想不跟踪而不在工作文件夹中删除这个文件使用&lt;code&gt;--cached&lt;/code&gt;，或者去.gitignore文件里面忽略。rm命令也可以使用glob模式，例如&lt;code&gt;git rm log/\*.log&lt;/code&gt;就是删除log文件夹下所有.log文件&lt;/p&gt;
+&lt;p&gt;移动文件&lt;code&gt;git mv file_from file_to&lt;/code&gt; 实际上是执行了复制，删除源文件，add新文件三条命令。不过git明白这相当于是一次重命名&lt;/p&gt;
+&lt;p&gt;查看提交历史 &lt;code&gt;git log&lt;/code&gt; 使用-p后缀可以看到每次提交的差异，也可以输入类似-2的后缀来限制输出最新的两次提交。&amp;ndash;stat显示统计信息。&amp;ndash;pretty==oneline 会显示把提交放在一行展示，另有short，full和fuller选项和format选项。&amp;ndash;graph会给你的命令行带一点符号来展示图形，稍微形象一些。也可以用&amp;ndash;since和&amp;ndash;until来限制时间，比方说&lt;code&gt;git log --since=2.weeks&lt;/code&gt; 或者使用&amp;ndash;author和&amp;ndash;grep这样来精细检索。还有一种过滤器-S，可以筛选出添加或删除了某个字符串的提交。e.g.&lt;code&gt;git log -S function_name&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;撤销操作 &lt;code&gt;git commit --amend&lt;/code&gt; 可以补上忘记添加的文件，如果没有，那也可以改提交信息，历史中也只会保存后来修改的提交&lt;/p&gt;
+&lt;p&gt;取消暂存的文件 &lt;code&gt;git reset &amp;lt;filename&amp;gt;&lt;/code&gt; 让某个文件离开暂存区，这是个危险的命令，尤其是在加上&amp;ndash;hard之后
+当然了也可以用&lt;code&gt;git checkout -- &amp;lt;file&amp;gt;&lt;/code&gt; ，Git会用最近提交的版本覆盖这个文件。需要注意的是在Git中可以被恢复的数据都是已提交的&lt;/p&gt;
+&lt;p&gt;查看远程仓库&lt;code&gt;git remote&lt;/code&gt; 会列出远程服务器的简写，origin会是默认名字&lt;/p&gt;
+&lt;p&gt;添加远程仓库&lt;code&gt;git remote add &amp;lt;shortname&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt;这样可以指定一个名字，这样以后可以用这个名字来代替链接&lt;/p&gt;
+&lt;p&gt;从远程仓库中抓取与拉取&lt;code&gt;git fetch &amp;lt;remote&amp;gt;&lt;/code&gt;这个命令只会下载数据，不会合并代码，而&lt;code&gt;git pull&lt;/code&gt;可以自动抓取后合并&lt;/p&gt;
+&lt;p&gt;推送到远程仓库&lt;code&gt;git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/code&gt; 这个命令必须在之前没有人推送时才能起作用，也就是说更改过的版本你必须先fetch才能再push&lt;/p&gt;
+&lt;p&gt;查看某个远程仓库&lt;code&gt;git remote show &amp;lt;remote&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;远程仓库的重命名与移除&lt;code&gt;git remote rename&lt;/code&gt; 和&lt;code&gt;git remote remove&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;列出标签&lt;code&gt;git tag&lt;/code&gt; 可以显示出版本号&lt;/p&gt;
+&lt;p&gt;创建标签&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;附注标签 &lt;code&gt;git tag -a&lt;/code&gt; 如果后面不加-m的话Git会要求你写入指定信息&lt;/li&gt;
+&lt;li&gt;轻量标签 &lt;code&gt;git tag &amp;lt;version&amp;gt;&lt;/code&gt; 后面不加别的，只有版本信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;后期打标签 在末尾指定提交的校验和&lt;/p&gt;
+&lt;p&gt;共享标签&lt;code&gt;git push origin &amp;lt;tagname&amp;gt;&lt;/code&gt; push并不会默认上传标签，需要显式推送&lt;/p&gt;
+&lt;p&gt;删除标签 &lt;code&gt;git tag -d &amp;lt;tagname&amp;gt;&lt;/code&gt; 如果要删除远程标签的话&lt;code&gt;git push origin --delete &amp;lt;tagname&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;检出标签 &lt;code&gt;git checkout&lt;/code&gt; 这个还挺麻烦的，如果需要做更改的话需要创建新分支&lt;/p&gt;
+&lt;p&gt;Git别名，在config文件里面设置自动推断比方说&lt;code&gt;git config --global alias.ci commmit&lt;/code&gt; 可以用&lt;code&gt;git ci&lt;/code&gt;替代&lt;code&gt;git commit&lt;/code&gt;
+常用的有&lt;code&gt;git config --global alias.unstage &#39;reset HEAD --&#39;&lt;/code&gt;
+&lt;code&gt;git config --global alias.last &#39;log -l HEAD&#39;&lt;/code&gt;
+该命令可以看最后一次提交
+如果要写外部命令只要在命令前加！就可以替换了&lt;/p&gt;
+&lt;p&gt;分支创建&lt;code&gt;git branch &amp;lt;name&amp;gt;&lt;/code&gt; 这里需要注意一点，Git的分支都是以指针移动到对应快照上，并非创建新的副本&lt;/p&gt;
+&lt;p&gt;分支切换&lt;code&gt;git checkout &amp;lt;branch&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除分支&lt;code&gt;git branch -d &amp;lt;name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;冲突处理，在针对同一处位置的多个修改时不会触发fast-forwarding，也就是说Git不会帮你自动合并，需要你自己处理。在&lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/code&gt;和&lt;code&gt;=====&lt;/code&gt; 之间的是上半部分，和&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;之间的是下半部分，这两部分是发生冲突的地方，需要进行处理，最后别忘了把这些符号也都删掉。解决完成后再add和commit就可以了&lt;/p&gt;
+&lt;p&gt;分支管理&lt;code&gt;git branch&lt;/code&gt; 会列出所有分支，&lt;code&gt;*&lt;/code&gt;代表目前所在分支。后缀加-v可以看到各个分支最后一次提交，&amp;ndash;merged可以看到已合并到当前分支的分支，&amp;ndash;no-merged则是未合并的，对于没星号已合并的分支可以直接删除，未合并的会报错，要删的话用-D&lt;/p&gt;
+&lt;p&gt;pull和fetch的区别，pull会自动merge，而fetch不会，它只是单纯的下载本地没有的数据&lt;/p&gt;
+&lt;p&gt;删除远程分支&lt;code&gt;git push origin --delete &amp;lt;branch&amp;gt;&lt;/code&gt; 会删除远程服务器上的这个分支指针，通常来说已删除的分支还会在服务器上保留一段时间，便于恢复&lt;/p&gt;
+&lt;p&gt;变基&lt;code&gt;rebase&lt;/code&gt; 将提交某一分支的所有更改移至另一分支
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/basic-rebase-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+这样做的好处比起merge来说看起来更简洁（只有一条线，而不是变成树型，虽然某种意义上这个还是树型&amp;hellip;）
+反正就&amp;hellip;看图吧，实在不会用乖乖merge无非难看点
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://git-scm.com/book/en/v2/images/interesting-rebase-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+需要注意&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果提交存在于你的仓库之外，而别人可能基于这些提交进行开发，那么不要执行变基。
+如果你遵循这条金科玉律，就不会出差错。 否则，人民群众会仇恨你，你的朋友和家人也会嘲笑你，唾弃你。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;想象一下就知道如果在多人开发中使用这种技巧很有可能导致别人开发的东西在一个已经被删除的分支上，而你们两个怎么也碰不到一起，因为你总要rebase。或者对方会在你的操作之间commit，天啊想想就是一场灾难&lt;/p&gt;
+&lt;p&gt;当然也有补救措施，但是考虑到这会给团队中的每个人带来大量的学习成本，而且我暂时也用不到，作为merge派我还是以后需要了再学吧&lt;/p&gt;
+&lt;p&gt;Git的四种协议，本地协议，HTTP协议，SSH协议，Git协议&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本地协议 最常用的，如果文件前指定file://会使用网络传输的进程，会降低效率
+优点是简单，如果设置过共享文件夹的话由于其分布式的特性会很方便。缺点是这个不一定快，比起那些有大量CDN服务器的网站来说。而且NFS访问一般也比SSH慢，而且每个成员都有完整的shell权限，如果被恶意破坏没有办法阻止&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP协议 有智能HTTP和哑HTTP之分，不关注了。好处是用着简单，高效且快，如果HTTPS的话还安全。缺点是服务器上架设麻烦。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SSH协议 这玩意不用介绍了吧。优点是简单、安全、高效。缺点是不支持匿名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git协议 有点像是可以匿名的SSH，不过不需要限权完全没有安全措施。有点是这个是最快的。缺点是缺乏授权机制。常用的方法是开放Git协议但是只读，SSH或HTTPS协议用来给开发者写入权限。而且这个架设难度很高，需要开放9418端口，企业一般不会允许开放非标准端口&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;生成SSH公钥。公钥一般存在于&lt;code&gt;~/.ssh&lt;/code&gt;下，以id_dsa和id_rsa命名，带有.pub后缀的是公钥，另一个是私钥。如果没有就运行ssh-keygen命令生成。&lt;/p&gt;
+&lt;p&gt;后面是将怎么手动搭建自己的Git服务器的，我用不到，而且现在一般都用成熟的套件（GitLab）一步一步配置下来吧，有前端可以看。或者直接使用专业的托管网站比方说Github&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>在Word中调出手写效果</title>
+        <link>https://kitasuna.ml/post/%E5%9C%A8word%E4%B8%AD%E8%B0%83%E5%87%BA%E6%89%8B%E5%86%99%E6%95%88%E6%9E%9C/</link>
+        <pubDate>Thu, 29 Dec 2022 11:23:52 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%9C%A8word%E4%B8%AD%E8%B0%83%E5%87%BA%E6%89%8B%E5%86%99%E6%95%88%E6%9E%9C/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;首先，在百度上找一段文字&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;致 200 米运动员：&lt;br&gt;
+200 百米跑道虽不长，运动健儿志高扬。摸拳擦掌跃欲试，分秒必争斗志扬今天的你们英姿飒爽，今天的你们朝气蓬勃，今天的你们一马当先。相信自己，你是最棒的！不要放弃，不要气馁。&lt;br&gt;
+成功永远属于你们。运动员！加油！&lt;br&gt;
+激动的血液因今天而沸腾，平静的情绪因今天而激动。在明媚的蓝天下，在宽广的赛场上，一颗颗炽热的心为你们而跳动，一双双期待的眼神因你们而牵动。努力吧！运动健儿们，相信自己，胜利的光环将永远环绕你们！&lt;br&gt;
+生命的意义在于奋斗，青春的意义在于拼搏，我们的激情在燃烧，我们的活力在四射，在今天这激动人心的日子里，运动健儿们，请尽情发挥你们的风采本色吧。&lt;/p&gt;
+&lt;h2 id=&#34;2-在文字前加个抬头假装是大学信纸写的&#34;&gt;2. 在文字前加个抬头，假装是大学信纸写的&lt;/h2&gt;
+&lt;p&gt;蹲大下面的横线如图设置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-5bdaa4b31dcb7e6a95a2d91f3bfdad1e_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-寻找合适的字体&#34;&gt;3. 寻找合适的字体&lt;/h2&gt;
+&lt;p&gt;这里我分别用的 &lt;strong&gt;汉仪尚巍手书 W&lt;/strong&gt; 和 &lt;strong&gt;【嵐】芊柔体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;稍微调整一下格式，如下图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-3e3a29e1bdbaa5703dc90fcb1ff8367e_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;感觉已经差不多了，但灵魂问题就是，这样太整齐了，我们得想办法让文字乱一些&lt;/p&gt;
+&lt;h2 id=&#34;4-宏命令&#34;&gt;4. 宏命令&lt;/h2&gt;
+&lt;p&gt;文件 - 选项 - 信任中心 - 信任中心设置 - 启用所有宏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-1ce4fe9a54749419c8de3dd66b583e58_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;视图 - 宏 - 创建一个宏&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-0599180fd39835eafd6b905712b20320_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;进去把代码 copy 上&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码参考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/20308770/answer/241699602&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如何让打印出来的字体看起来像手写的？&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Sub 字体修改()
+&amp;#39;
+&amp;#39; 字体修改 宏
+&amp;#39;
+&amp;#39;
+Dim R_Character As Range
+
+Dim FontSize(5)
+&amp;#39;指定五种字号
+FontSize(1) = &amp;#34;16&amp;#34;
+FontSize(2) = &amp;#34;16.2&amp;#34;
+FontSize(3) = &amp;#34;16.5&amp;#34;
+FontSize(4) = &amp;#34;17&amp;#34;
+FontSize(5) = &amp;#34;17.2&amp;#34;
+
+Dim ParagraphSpace(5)
+&amp;#39;指定五种行间距
+ParagraphSpace(1) = &amp;#34;12&amp;#34;
+ParagraphSpace(2) = &amp;#34;13&amp;#34;
+ParagraphSpace(3) = &amp;#34;17&amp;#34;
+ParagraphSpace(4) = &amp;#34;9&amp;#34;
+ParagraphSpace(5) = &amp;#34;12&amp;#34;
+
+For Each R_Character In ActiveDocument.Characters
+    VBA.Randomize
+&amp;#39;字号在5种指定大小中随机选取
+    R_Character.Font.Size = FontSize(Int(VBA.Rnd * 5) + 1)
+&amp;#39;位置在1—3之间随机选取
+    R_Character.Font.Position = Int(VBA.Rnd * 3) + 1
+    R_Character.Font.Spacing = 0
+
+Next
+Application.ScreenUpdating = True
+
+For Each Cur_Paragraph In ActiveDocument.Paragraphs
+&amp;#39;行间距在5个指定值中随机选取
+    Cur_Paragraph.LineSpacing = ParagraphSpace(Int(VBA.Rnd * 5) + 1)
+    
+Next
+    Application.ScreenUpdating = True
+    
+
+
+End Sub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保存 - 运行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-d89c482ba36e107a24298a9884761fce_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;回来看原文件，已经 “良莠不齐” 了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-3c490a5404d7761e2ba3121d15044dbc_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-调整&#34;&gt;5. 调整&lt;/h2&gt;
+&lt;p&gt;如果对结果不满意，可以多运行几次宏，找到合适的一版，再微调一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic3.zhimg.com/v2-77b4c92dadc14d2b4117f4e0a7b1201a_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下划线格式在下拉菜单能找到详细设置，用空格延长下划线&lt;/p&gt;
+&lt;p&gt;word 默认段首空格是缩进&lt;/p&gt;
+&lt;p&gt;解决办法是在上一行倒数几个空格的地方回车，下面一段接上就可以了&lt;/p&gt;
+&lt;p&gt;(经评论提醒，可以设置取消首行缩进)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-fabd3dfd97e9ed86b7ced9a53ac987b0_b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6-保存&#34;&gt;6. 保存&lt;/h2&gt;
+&lt;p&gt;另存为 pdf，免得打印的时候乱了格式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-549bce95df0ada5288f747db6571755c_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最终效果（横线粗细不一是显示的原因，放大后自动消失）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-e9ac9c91ddea0d38f042eac8b59bde88_r.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;当然，这种奇技淫巧可能在写反思的时候更有用吧（逃）&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>佳能M50怎么上C-LOG</title>
+        <link>https://kitasuna.ml/post/%E4%BD%B3%E8%83%BDm50%E6%80%8E%E4%B9%88%E4%B8%8Ac-log/</link>
+        <pubDate>Thu, 29 Dec 2022 10:51:49 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E4%BD%B3%E8%83%BDm50%E6%80%8E%E4%B9%88%E4%B8%8Ac-log/</guid>
+        <description>&lt;p&gt;LOG作为一种对比RAW格式的妥协，在保证了文件大小不至于过大的同时，保证了一定程度的宽容度。但是佳能不这么想，对比起隔壁Sony全系S-LOG，佳能后知后觉的只在较新的顶配机型上加了自己的C-LOG功能。&lt;/p&gt;
+&lt;p&gt;为了尽可能达到这个效果，我们可以用相机里的自定义预设来模拟。相当于用调色来模仿C-LOG。实际上并没有提升。算是一个聊胜于无的功能吧。&lt;/p&gt;
+&lt;p&gt;总之只需要用EOS Utility连接相机。&lt;/p&gt;
+&lt;p&gt;在预设风格里面加载pf2或者是pf3文件就可以了，如果之前有过加预设滤镜那应该对这个步骤很熟。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.technicolor.com/cinestyle&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cinestyle Download | Technicolor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里提供免费的C-LOG文件，网站里也有安装教程就不细说了（其实也说完了）。&lt;/p&gt;
+&lt;p&gt;体验上的话确实有点像正经用LOG那种灰蒙蒙的感觉，由于目前我也不拍视频，所以就不上对比了。说到底还是骗骗自己，获得一个白嫖的很少的提升。&lt;/p&gt;
+&lt;p&gt;Have fun.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>解决部署在Github Pages上图片不显示的问题</title>
+        <link>https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Thu, 22 Dec 2022 19:18:26 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%9C%A8github-pages%E4%B8%8A%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;p&gt;简单来说一句话，看看自己有没有配置config.toml里的baseUrl。如果没有的话自己每次引用的图片都是自己的域名/引用的域名，这样能找的到图片就有鬼了，肯定每次都报错404。&lt;/p&gt;
+&lt;p&gt;我还因为这个问题头疼了两天，主要是搜也搜不到，估计是很蠢的问题，也没好意思提Issue去问。&lt;/p&gt;
+&lt;p&gt;现在发现根源之后果然很蠢。主要是浏览器报错的error竟然是黄色的，在我的刻板印象里黄色的都是warning不用管的。&lt;/p&gt;
+&lt;p&gt;后来想了想本地部署的可以显示，但是远程的不行，那我看看这个报的错有什么区别呗。一对比才找到问题。&lt;/p&gt;
+&lt;p&gt;于是搜了下上面的&lt;code&gt;Error with Permissions-Policy header: Origin trial controlled feature not enabled: &#39;interest-cohort&#39;.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;找到了&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/DD_Davis/article/details/128101441&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这个博客&lt;/a&gt;就想起来前几天配置的时候为了方便不用老改CNAME，把Url删除空了，这样确实主页什么的改或者不改域名都能进了，但是图片引用上就寄了。真是服了。&lt;/p&gt;
+&lt;p&gt;不过就算配置了baseUrl这个报错也不会消失，不过能用就行了我也不想管了。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/72948207/error-with-permissions-policy-header-origin-trial-controlled-feature-not-enable&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;StackOverflow上面有说是router配置问题的&lt;/a&gt;，反正大概就还是哪个地方没写明白地址的事吧。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>北山家的饭 其四</title>
+        <link>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E5%9B%9B/</link>
+        <pubDate>Tue, 20 Dec 2022 21:56:43 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E5%9B%9B/</guid>
+        <description>&lt;p&gt;今天做&lt;strong&gt;蔬菜粥！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不用多说还是熟悉的模糊菜谱，基本上就突出一个自己品。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
+&lt;p&gt;大米 1 杯&lt;/p&gt;
+&lt;p&gt;青菜 一小把&lt;/p&gt;
+&lt;p&gt;猪肉 150 克&lt;/p&gt;
+&lt;p&gt;羊肚菌 若干&lt;/p&gt;
+&lt;p&gt;油 适量&lt;/p&gt;
+&lt;p&gt;盐 适量&lt;/p&gt;
+&lt;h2 id=&#34;蔬菜粥的做法&#34;&gt;蔬菜粥的做法  &lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;准备好的材料&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;菜切碎&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最好用刀剁碎&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;羊肚菌先下，再下一点薄油。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;菜和肉一起，煮开后一分钟下盐就可以了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;完成，适合孩子吃&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;成品 &lt;img src=&#34;https://s2.loli.net/2022/12/20/gHlDTLnMZkIfvae.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;大米一杯需要配到锅大概中上位置的水，因为米煮熟还是需要20-25分钟的，中间蒸发很多水，如果没掌握好量，后面加水就不要加太多了。肉丁和菜特别容易熟，按照他说的煮开了就能出锅是没问题的。盐的话3人份放1勺半正好，如果放多点味道当然好一些但是会纳摄入也会变多。油的话点了一点，大概10ml，说实话感觉不出油发挥的作用，反正加点意思意思就行了。&lt;/p&gt;
+&lt;p&gt;想做粘稠一点，这次的水没把握好，下次做成了再评分吧&lt;/p&gt;
+&lt;p&gt;下一步准备买量筒和电子秤。以后的菜谱笔记尽量详细。我觉得菜完全可以做标准化的。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>北山家的饭 其三</title>
+        <link>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</link>
+        <pubDate>Mon, 19 Dec 2022 20:41:25 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%89/</guid>
+        <description>&lt;h2 id=&#34;cuisine-4-干锅土豆片&#34;&gt;Cuisine 4 干锅土豆片&lt;/h2&gt;
+&lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
+&lt;p&gt;土豆 1 大个
+青椒 2 个
+五花肉片 适量
+葱姜蒜 适量
+豆瓣酱 1 小勺&lt;/p&gt;
+&lt;h2 id=&#34;干锅土豆片的做法&#34;&gt;干锅土豆片的做法  &lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;土豆切片&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;青椒切片&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;葱姜蒜辣椒备用（胡萝卜是为了配色，可要可不要）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1 勺生抽➕1 勺料酒➕半勺白糖➕1 勺豆瓣酱&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;土豆片电饼铛煎一下，辣椒也煎一下，煎出虎皮&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;少油放肉片，煎出猪油&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;放葱姜蒜辣椒，把土豆和青椒放进去，把调料倒进去，收一下汁就行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;出锅&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;上成品图
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/linsmik/kita-image/mhKYg4oWVsLZ3fU.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;算是比较失败吧。本来以为家里有电饼铛，结果之前被扔掉了。不得已选择了干煸的方式对土豆片预处理，这就导致了一个问题，土豆边缘熟度比中间高，如果没有裹上蘸料分散热量就会导致边缘都要糊了里面还硬邦邦的。实在是没有办法才这么做的。&lt;/p&gt;
+&lt;p&gt;另外买猪五花主要是为了熬猪油，普通的猪肉块因为含有瘦肉的部分较多，如果要熬油瘦肉很容易就老了。最后收汁的时间也没把握好，主要是因为前面肉已经有点糊的感觉了，不敢再加长时间了。&lt;/p&gt;
+&lt;p&gt;总的来说把干锅土豆做成了普通的青椒炒肉片，由于没有成功所以暂不评分。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>北山家的饭 其二</title>
+        <link>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</link>
+        <pubDate>Sun, 18 Dec 2022 20:17:23 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%BA%8C/</guid>
+        <description>&lt;h2 id=&#34;cuisine-3-鸡翅根炖土豆&#34;&gt;Cuisine 3 鸡翅根炖土豆&lt;/h2&gt;
+&lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
+&lt;p&gt;鸡翅根 8个&lt;/p&gt;
+&lt;p&gt;土豆 2个&lt;/p&gt;
+&lt;p&gt;葱 半根&lt;/p&gt;
+&lt;p&gt;粉条 1把&lt;/p&gt;
+&lt;p&gt;料酒 1勺&lt;/p&gt;
+&lt;p&gt;盐 5克&lt;/p&gt;
+&lt;p&gt;姜 5片&lt;/p&gt;
+&lt;p&gt;生抽 1勺半&lt;/p&gt;
+&lt;p&gt;老抽 半勺&lt;/p&gt;
+&lt;p&gt;干辣椒 3个&lt;/p&gt;
+&lt;p&gt;冰糖 6块&lt;/p&gt;
+&lt;p&gt;蚝油 半勺&lt;/p&gt;
+&lt;p&gt;花生油 10克&lt;/p&gt;
+&lt;p&gt;啤酒 半瓶&lt;/p&gt;
+&lt;h2 id=&#34;用料-1&#34;&gt;用料  &lt;/h2&gt;
+&lt;h2 id=&#34;鸡翅根炖土豆的做法&#34;&gt;鸡翅根炖土豆的做法  &lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;把准备好的鸡翅根每个正反面各片两刀，为了后期入味儿，热水焯出血沫，再用冷水清洗干净。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按照上面说明中的生抽、老抽、耗油、冰糖配好调料，准备干辣椒和切好的葱姜&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;锅中放油，稍稍热点了放进调料炒糖色&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后放入鸡翅根上色，放入葱姜辣椒调味儿&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;放入半瓶啤酒，略加一点水，大火炖开转入小火炖 20 分钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;土豆切块，事先泡好粉条，放入锅中再小火炖十分钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等到土豆炖烂就可出锅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;操作简单，非常下饭！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这次大失败所以不放图了，总结一下比较重要的地方。&lt;/p&gt;
+&lt;p&gt;第一个是炒糖色，这个很麻烦而且很重要，但是这个B教程没说，我的做法是小火，酱料下过之后必须立即翻炒防止粘锅，等到开始冒泡立即放入翅根，翻炒上色，这个过程要稍微长一点，就是你明显可以看到有颜色的时候还需要再炒，因为这个颜色会在后面的过程中被洗掉一部分，非常离谱。当然了，过长时间也会导致变糊，比单纯的炒冰糖和酱料会慢一些。&lt;/p&gt;
+&lt;p&gt;第二个，焯血沫，很他妈离谱。完全没图和解释。具体就是开水煮翅根会冒出来火锅里面类似的沫子，那个就是了，不是红色的，我觉得就是油沫。&lt;/p&gt;
+&lt;p&gt;第三个，这个逼教程最重要但是也被这个逼人省略了的，放啤酒之后加一点水。我的建议是不加也行。顺便这个教程啤酒大小也没有，我只能说我400ml的啤酒加半碗水是完全完全的overkill了。后面小火煮三十分钟根本不能收汁。但是这道菜的步骤完全没有加盐和味精的地方，所以意思就是你刚开始放的料除以你食物的多少，就是你得到的咸度。这个土豆真的，有大土豆和小土豆，但是没说！如果你运气不好跟这个sb教程的土豆不一样大，那你肯定会出岔子的。土豆炖烂的话我这里10分钟是不够的，我只能说10分钟中火小火混合勉强烂了一点，如果要那种软软的建议中火10分钟，顺便我切的块比图中给的要小一半。&lt;/p&gt;
+&lt;p&gt;这次菜失败的原因就是这个菜谱里面未知因素太多了，根本没法一下子掌控，如果不想花两个小时吃自己做出来的寡淡无味的东西，一定要去找足够详细的教程，最好是每个步骤都有确定用量的。&lt;/p&gt;
+&lt;p&gt;我最讨厌说每个人有每个人口味所以写适量的，对于小白来说你需要给他一个确定的能吃的味道，他再根据自己的口味去调整调料的用量。要不你就写出参考用量，然后写明白这里可以调整正负多少多少。你妈个逼的不写明白的有一个算一个全他妈脑瘫。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>北山家的饭 其一</title>
+        <link>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</link>
+        <pubDate>Thu, 15 Dec 2022 21:20:42 +0800</pubDate>
+        
+        <guid>https://kitasuna.ml/post/%E5%8C%97%E5%B1%B1%E5%AE%B6%E7%9A%84%E9%A5%AD-%E5%85%B6%E4%B8%80/</guid>
+        <description>&lt;p&gt;作为一个极其怕麻烦的人本来我是根本不想拥有做饭这个技能的，但是爸爸做饭越来越敷衍，总拿外面卖的主食当一顿饭。（小笼包、肉夹馍等等）虽然偶尔吃吃还可以，但是家父只要发现你能吃进去这个那么你这段时间一定会隔三岔五的吃到这个东西，尤其是可以外面买到或者只需要简单加工的。这也就导致了我经常一段时间过后就会深深的厌恶上一种食物，类似于你把喜欢的歌当起床闹钟。&lt;/p&gt;
+&lt;p&gt;在忍受了这么长时间的凑合之后，有一天我终于绷不住了，这他妈的也太让人崩溃啦。于是决定自己做做看，由于我是个懒狗，这一点我对自己有清醒的认知。我决定在家里啃老的这段时间赶紧学几道菜，一方面是改善一下天天被我爸应付的食谱，&lt;del&gt;另一方面在家可以不用洗锅洗碗嘻嘻。&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;总之在上述的机缘巧合之下，北山开始了他的中华小当家之旅。&lt;/p&gt;
+&lt;h2 id=&#34;cuisine-1-蚝油生菜&#34;&gt;Cuisine 1 蚝油生菜&lt;/h2&gt;
+&lt;p&gt;作为除了小时候被迫学过做炒鸡蛋就再也没下过厨房的我，虽然立下了要给自己做好吃的目标，但起步还是很没骨气的选择了很简单的素菜。&lt;/p&gt;
+&lt;p&gt;素菜毕竟是很容易熟的嘛，就算我出现什么重大失误了应该也不会吃出问题。更何况这个只需要焯水1分钟。剩下的就是调调下的料和炒个蒜罢了。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;焯水：指把肉或者菜放到煮开的水里面&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;下面是&lt;strong&gt;食谱&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用料&#34;&gt;用料  &lt;/h2&gt;
+&lt;p&gt;蒜 2 瓣&lt;/p&gt;
+&lt;p&gt;生抽 1 勺&lt;/p&gt;
+&lt;p&gt;生菜 2 颗&lt;/p&gt;
+&lt;p&gt;蚝油 1 勺&lt;/p&gt;
+&lt;p&gt;糖 2 勺&lt;/p&gt;
+&lt;p&gt;醋 1 勺&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;洗好的生菜焯水，水开放生菜。焯水 1 分钟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;捞出控水备用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;准备蚝油 1 勺，生抽 1 勺，白糖 2 勺，盐 1 勺，醋 1 勺，2 倍多的水，搅匀备用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;锅中倒入油，蒜爆香。倒入刚刚准备的调料。烧开&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;浇到刚刚焯好水的生菜上，完成。超级好吃&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;小贴士&#34;&gt;小贴士&lt;/h2&gt;
+&lt;p&gt;注意青菜 1 分钟就好了，不要焯水太久。另外焯水时放入点盐，油，保鲜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;下面是我的成果&lt;/strong&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/linsmik/kita-image/rwHZnvGjpSbK3C6.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这个蒜爆香的时候我炒的有点焦了，虽然一下子香味就出来了，但是过度油炸的东西果然还是有点不太健康。感觉问题出在油温太高了，我是在油已经开始冒烟的时候才下的蒜丁。
+其他的就没什么了，毕竟基本上只要按照比例配好味道都差不多的。&lt;/p&gt;
+&lt;p&gt;我的评价是难易度：很低，耗时：很少，味道：还可以&lt;/p&gt;
+&lt;p&gt;推荐度7/10。适合想吃的健康点或者懒得做的时候。热量低的一批，吃了有饱腹感但是很快就消化完了，当夜宵加餐比较合适。&lt;/p&gt;
+&lt;h2 id=&#34;cuisine-2-疙瘩汤&#34;&gt;Cuisine 2 疙瘩汤&lt;/h2&gt;
+&lt;p&gt;这次做的是疙瘩汤，一直觉得这个真的很好吃，黏糊糊的汤里面有蛋有菜也很好看，之前在东北上学的时候去恰烧烤，15块钱能点满满一盆疙瘩汤。不禁让我想起来小时候和妈妈一起去学校门口吃的西湖牛肉羹。&lt;/p&gt;
+&lt;p&gt;不过做菜的过程就一言难尽了，拌疙瘩需要一滴水一滴水的去搅拌面粉，可以说吃的每一口都是自己亲手拌出来的，非常非常的耗费时间。这次需要准备的食材也比较多，把每种食材都需要切成小丁。总的来说是比第一个要难一些的。&lt;/p&gt;
+&lt;p&gt;下面是&lt;strong&gt;食谱&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;用料-1&#34;&gt;用料  &lt;/h2&gt;
+&lt;p&gt;面粉 100克&lt;/p&gt;
+&lt;p&gt;鸡蛋 1个&lt;/p&gt;
+&lt;p&gt;西红柿 1个&lt;/p&gt;
+&lt;p&gt;菠菜 2-3颗&lt;/p&gt;
+&lt;p&gt;葱花 少许&lt;/p&gt;
+&lt;p&gt;食用油 少许
+ &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将水龙头调制水一滴一滴的滴下，不连成水流（在搅拌过程中务必注意不可碰到水龙头开关，不然容易造成严重翻车 [失望 R] 不要问我怎么知道的，都是伤心的泪水）&lt;br&gt;
+将面粉碗移至水龙头下，用筷子来回搅拌，并不停的转动面粉的碗，不可在一个地方停留，容易形成特大的疙瘩，搅拌至无干粉即可&lt;br&gt;
+针对面疙瘩，有人喜欢吃小的，有的喜欢吃大一点的，看个人喜好哈（我拌的这份属于偏大一点的）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;小火 锅内加油烧热 放入葱花炒香&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;小伙转中火，放入西红柿丁，炒至软烂（爱吃西红柿味道的可在此步骤中加入一点番茄酱，我没加哈）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在锅内加入适量的热水、烧至沸腾&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;向沸腾的汤中，均匀的撒入面疙瘩，分散的撒，不要撒在一个地方，撒好以后用铲子推动几下；&lt;/p&gt;
+&lt;p&gt;慢慢煮 3-5 分钟，夹出一个面疙瘩尝一尝里面是否还有面粉心状态，有的话再煮一会，随时尝着，不要怕麻烦。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;煮好面疙瘩以后，放入菠菜丁，推动几下可立即开始调味&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;放入 1 勺盐，1 勺鸡粉（有人爱吃酱油可放入一点生抽，我不爱吃没放）&lt;br&gt;
+均匀的分散着撒上鸡蛋液，立即关火（余温会把鸡蛋液烫熟的，有人爱吃芝麻香油，可在关火后淋入几滴香油，我不爱吃没放）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;倒入大碗中！一碗好吃的疙瘩汤就做成了！整体来看，只有搅[拌面]粉的时候会多花一点时间，其余步骤超级快，整体调味简单！适合厨房小白！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;做这个还是翻车严重的。爆香葱花的时候还是糊了一点点，这次也是等冒烟了才下的锅，不过迅速调了小火就好了。然后面疙瘩其实需要想办法让它不潮湿，外表裹上面粉，这个没什么办法只能用时间硬耗，中间有一部分我觉得我拌的蛮好的，方法是把水平均的滴在面粉上然后分开拌，这样又快拌出来的疙瘩又小，而且上粉很均匀。不过除此之外的都是灾难了，潮湿的面团放在碗里之后几乎变成了稀松的面饼。下锅时不得已一个一个揪开。加水的时候也加少了导致最后的成品过于粘稠了，变成了羹。其他的倒是没什么，面疙瘩基本上下锅之后等了两分钟就就熟了，估计是因为我下的太慢了，毕竟边下边揪小团确实浪费时间。味道倒是没得说，我觉得在现代调味料的帮助下，已经很难做出没法下口的饭菜了，对于任何一个接受过化学实验的人来说这都不应该是一件难事。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;下面是我的成果&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/linsmik/kita-image/XPjAJym4LbOSv3t.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我的评价是难易度：较简单，耗时：较多，味道：不错&lt;/p&gt;
+&lt;p&gt;推荐度7/10。适合在冬天花时间给自己心爱的人做一锅暖暖的又营养丰富的粥。如果不是特别喜欢是绝对不想花这么多时间做这个事情的。实在是太麻烦了，有这功夫可能点的外卖都到了吃完了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
